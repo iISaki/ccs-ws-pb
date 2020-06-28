@@ -4,25 +4,6 @@
 
 let BaseComponent = require("BaseComponent")
 
-// onLoad
-// start
-// update
-// lateUpdate
-// onDestroy
-// onEnable
-// onDisable
-/** 
- * 笔记
- *  
-        this._super();就是调用跟自己这个方法同名的父类函数
- */
-
-
- /** 
-  * onEnter
-  * onExit
-  * onExitClean
- */
 
 window.ViewBase = cc.Class({
     extends: BaseComponent,
@@ -30,23 +11,6 @@ window.ViewBase = cc.Class({
         // _eventMap:[],
     },
 
-
-
-    //========================================= 管理加载相关  突然觉得写在基类的方法就应该前面加个横线,便于区分
-
-    // _loadTexture:function(textureUrlArray,callback,finishCallback){
-    //     let self = this;
-    //     let saveCallback = function(url,atlas){
-    //         if(self.isValid){
-    //             self.m_spriteFrameUrls.push(url);
-    //             if(callback){
-    //                 callback(url,atlas)
-    //             }
-    //         }
-    //     };
-
-    //     PlistTextureManager.loadResource(textureUrlArray,saveCallback,finishCallback)
-    // },
 
 
     /*
@@ -63,58 +27,7 @@ window.ViewBase = cc.Class({
         return PlistTextureManager.isResourceLoad(url)
     },
 
-
-
-    // _loadJson:function(jsonArray,callback,finishCallback){
-    //     let self = this;
-    //     let saveCallback = function(url,json,index){
-    //         self.m_jsonUrls.push(url);
-    //         callback(url,json,index)
-    //     };
-    //     JsonManager.loadResource(jsonArray,saveCallback,finishCallback)
-    // },
-    //========================================= 组件方便的方法
-    //设置我的组件,
-    // setCom:function(name){
-    //     this.m_defultComponent = this.node.getComponent(name)
-    // },
-    // getCom:function(){
-    //     return this.m_defultComponent;
-    // },
-
-    // //========================================= 通用缓存池
-    // tryInitCache:function(name){
-    //     if(!this.m_commonCache[name]){
-    //         // this.m_commonCache[name] = [];
-    //         this.m_commonCache[name] = new cc.NodePool(name);
-    //     }
-    // },
-    // pushCache:function(name,node){
-    //     this.tryInitCache(name);
-    //     node.active = false;
-    //     // this.m_commonCache[name].push(node);
-    //     this.m_commonCache[name].put(node);
-    // },
-    // /*
-    // * createFunc:创建节点函数,自行addChild
-    // * */
-    // popCache:function(name){
-    //     this.tryInitCache(name);
-    //     // let node = this.m_commonCache[name].pop();
-    //     let node = this.m_commonCache[name].get();
-    //     if(node){
-    //         node.active = true;
-    //         return node;
-    //     }else{
-    //         return null;
-    //     }
-    // },
-
     _initBgm:function(){
-        // let comAudioSource = this.node.getComponent(cc.AudioSource)
-        // if(comAudioSource){
-        //     AudioManager.playMusic(comAudioSource)
-        // }
     },
 
     //获取外部传进来的参数
@@ -130,15 +43,6 @@ window.ViewBase = cc.Class({
     //========================================= 下面是creator的原生方法
 
     ctor:function() {
-        // this.m_commonCache = {};//通用缓存池
-
-        /**加载过的精灵帧连接都会保存在这里
-         *
-         * [url , url,]
-         * */
-        // this.m_spriteFrameUrls = [];
-        // this.m_jsonUrls = [];
-
     },
 
 

@@ -241,19 +241,6 @@ window.BaseComponent = cc.Class({
         CommonAssetsManager.loadResource([_url],saveCallback,null,type)
     },
     
-    //========================================= 下面是 json
-
-
-    // _loadJson:function(jsonArray,callback,finishCallback){
-    //     logger.warn("弃用接口,现在会使用ConfigManager进行加载配置")
-    //     let self = this;
-    //     let saveCallback = function(url,json,index){
-    //         self.m_jsonUrls.push(url);
-    //         callback(url,json,index)
-    //     };
-    //     JsonManager.loadResource(jsonArray,saveCallback,finishCallback)
-    // },
-
     //========================================= 下面是 节点相关
     getC:function(name){
         return this.seekC(this.node,name)

@@ -1,22 +1,22 @@
 # ccs-ws-pb
 creator+websocket+protobuf
 
-½ÓÈëprotobuf
-	°²×°protobufjsµ½È«¾Ö
+æ¥å…¥protobuf
+	å®‰è£…protobufjsåˆ°å…¨å±€
 		npm install -g protobufjs
-	ÏÂÔØprotobuf.js
-		Ö±½ÓÄÃ°²×°ºÃµÄprotobuf£¬Â·¾¶
+	ä¸‹è½½protobuf.js
+		ç›´æ¥æ‹¿å®‰è£…å¥½çš„protobufï¼Œè·¯å¾„
 		C:\Users\{Admin}\AppData\Roaming\npm\node_modules\protobufjs
-		µ¼Èëcreator²¢×÷Îª²å¼ş
-	ÔÚ±£´æprotoÎÄ¼şµÄÄ¿Â¼ÏÂ´ò¿ªÃüÁîĞĞÖ´ĞĞÈçÏÂÃüÁî
+		å¯¼å…¥creatorå¹¶ä½œä¸ºæ’ä»¶
+	åœ¨ä¿å­˜protoæ–‡ä»¶çš„ç›®å½•ä¸‹æ‰“å¼€å‘½ä»¤è¡Œæ‰§è¡Œå¦‚ä¸‹å‘½ä»¤
 		pbjs -t static-module -w commonjs -o proto.js *.proto
-	Éú´æproto.js£¬È»ºó°Ñproto.jsÎÄ¼ş·ÅÈë´úÂëÄ¿Â¼ÖĞ£¬ÒòÎªprotobufÒÑ¾­±»	ÖÃÎª²å¼şÁË£¬ĞŞ¸Äproto.jsÖĞprotobufµÄÒıÓÃ£º
+	ç”Ÿæˆproto.jsï¼Œç„¶åæŠŠproto.jsæ–‡ä»¶æ”¾å…¥ä»£ç ç›®å½•ä¸­ï¼Œå› ä¸ºprotobufå·²ç»è¢«	ç½®ä¸ºæ’ä»¶äº†ï¼Œä¿®æ”¹proto.jsä¸­protobufçš„å¼•ç”¨ï¼š
 		// var $protobuf = require("protobufjs/minimal");
 		var $protobuf = protobuf
 
- ²Î¿¼Á´½Ó£ºhttps://www.jianshu.com/p/57736a8dbf9c
+ å‚è€ƒé“¾æ¥ï¼šhttps://www.jianshu.com/p/57736a8dbf9c
 
-serverÎÄ¼ş¼ĞÎª·şÎñÆ÷
-¡¡°²×°WS  npm install ws
-¡¡°²×°protobufjs npm install protobufjs
-¡¡Æô¶¯·şÎñÆ÷    node .\index.js
+serveræ–‡ä»¶å¤¹ä¸ºæœåŠ¡å™¨
+	å®‰è£…WS  npm install ws
+	å®‰è£…protobufjs npm install protobufjs
+	å¯åŠ¨æœåŠ¡å™¨    node .\index.js
